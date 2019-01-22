@@ -1,0 +1,416 @@
+/* Goblal -------------------------------------------------------------------> */
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: Helvetica;
+}
+
+body {
+  overflow: auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Button --------------------------------------<*/
+.btn-primary {
+  background-color: #D05151;
+  border: 1px solid #D05151;
+  transition: 300ms;
+}
+
+.btn-primary:hover {
+    background-color: rgba(208,81,81,0);
+    /* background-color: rgb(21,32,32); */
+    border: 1px solid #D05151;
+    /* border: 1px solid #D2d2cc; */
+    color: #D05151;
+    /* color: #d2d2cc; */
+}
+/* Fixed Background----------------------------> */
+.bgd-fixed {
+    height: 70vh;
+    /* margin: 50px 0; */
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/jumbotron.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow:inset 0px 5px 3px -5px #fff,inset 0px -5px 3px -5px #fff;
+}
+
+.bgd-fixed1 {
+    height: 70vh;
+    /* margin: 50px 0; */
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/fixed.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow:inset 0px 5px 3px -5px #fff,inset 0px -5px 3px -5px #fff;
+}
+
+.bgd-fixed-echipa {
+    height: 70vh;
+    /* margin: 50px 0; */
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/echipa/echipa.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow:inset 0px 5px 3px -5px #fff,inset 0px -5px 3px -5px #fff;
+    /* position: absolute; */
+}
+
+/* GOOGLE MAP ----------------------------->*/
+#map {
+  width: 100%;
+  height: 500px;
+  background-color: grey;
+}
+
+/* BIG IMAGE MODAL */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+/*  Navigation --------------------------------------------------------------->*/
+.my-navbar {
+  /* background-color: rgb(205,212,202); */
+  background-color: rgb(21,32,32);
+  color: #d2d2cc;
+  height: 80px;
+  border-bottom: none;
+  /* box-shadow: 0 4px 2px -2px #999999; */
+  text-align: center;
+  opacity: 0.95;
+}
+
+.nav {
+  padding-top: 15px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a {
+  border-radius: 10px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  margin: 0 5px;
+  border-radius: 10px;
+  /* padding: 15px 15px; */
+}
+.navbar-default .navbar-nav>li>a:hover {
+  /* background-color: #e7e7e7; */
+  background-color: #D05151;
+  color: #D2d2cc;
+  transition: 300ms;
+}
+
+
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+/* Mini Navigation-------------------------------> */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background-color: rgba(21,32,32,0.7);
+
+  /* width: 100%; */
+}
+/* Showcase ------------------------------------>*/
+.jumbotron {
+  margin-top: 80px;
+  margin-bottom: 0;
+  height: 400px;
+  color: #D2d2cc;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/jumbotron.jpg");
+  background-size: cover;
+  background-position: 0px 670px;
+  background-attachment: fixed;
+}
+
+.navbar-brand {
+  padding-top: 28px;
+  font-size: 2em;
+}
+
+
+/* About -------------------------------------------------------------------->*/
+.about {
+  /* background-color: violet; */
+  margin-top: 50px;
+}
+.bar-sep {
+  width: 5px;
+  height: 120px;
+  /* background-color: rgb(135,174,180); */
+  background-color: #D05151;
+}
+
+.ab {
+  /* background-color: green; */
+}
+
+.descriere {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Team ------------------------------------------------------------------>*/
+.echipa {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#ech {
+  margin-bottom: 30px;
+}
+
+.membru img {
+  width: 300px;
+  /* height: 500px; */
+  /* height: 400px; */
+  box-shadow: 10px 10px 5px #aaaaaa;
+  /* border-radius: 50%; */
+}
+
+/* Servicii -----------------------------------------------------------------> */
+.serv-img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.artificii-int {
+  background-image: url("../img/servicii/artificii-int.jpg");
+  background-size: cover;
+}
+
+.artificii-ext {
+  background-image: url("../img/servicii/artificii-ext.jpg");
+  background-size: cover;
+}
+
+.fum-greu {
+  background-image: url("../img/servicii/fum-greu.jpg");
+  background-size: cover;
+}
+
+/* Portofoliu ---------------------------------------------------------------->*/
+.portofoliu img {
+  width: 100%;
+  height: 400px;
+  transition: 250ms;
+}
+
+.portofoliu img:hover {
+  cursor: pointer;
+  opacity: .8;
+  transform: scale(1.05);
+}
+
+.portofoliu-img {
+  margin: 15px 0;
+}
+/* Visit----------------------------------> */
+.visit {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.visit a{
+  color: red;
+  font-size: 1.5em;
+}
+/* Footer------------------------------------------------------------------> */
+footer {
+  background-color: #D05151;
+  color: rgb(21,32,32);
+  font-size: 1.3em;
+  height: 200px;
+  /* margin-top: 100px; */
+  /* position: sticky; */
+  padding-bottom: 25px;
+}
+
+footer h3 {
+  /* padding-top: 10px; */
+}
+
+footer h1 {
+  font-size: 5em;
+  /* padding-top: 10px; */
+}
+
+footer ul {
+  list-style: none;
+  /* padding-top: 10px; */
+}
+footer ul li {
+  /* padding: 3px 0; */
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(21,32,32);
+}
+
+.icons {
+  font-size: 0.8em;
+}
+
+footer a:hover {
+  color: rgb(21,32,32);
+}
+
+.foot {
+  /* padding-top: 50px; */
+}
+
+.logo-footer {
+  width: 100px;
+  height: 100px;
+  background-color: #526A6E;
+  /* float:right; */
+}
+
+.float-left {
+  float: left;
+}
+
+/* MEDIA QUERYS Mobile and Table ----------------------------------------------> */
+@media only screen and (max-width: 768px) {
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: rgba(21,32,32,0.85);
+    margin-top: 15px;
+    width: 100vw;
+    color: white;
+    /* padding-left: 0; */
+  }
+  .navbar-default .navbar-nav>li {
+    border-bottom: 1px solid #D05151;
+    /* border-width: 100vw; */
+  }
+  /* Make submenu full width */
+  nav .container {
+    width: 100%;
+    margin: 0;
+  }
+  /* Also for submenu full width */
+  .container-fluid {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: #e5e5e5;
+  }
+  /* Better allign submenu items */
+  .navbar .navbar-nav {
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+  /* Toggle button> */
+  .navbar-default .navbar-toggle {
+    margin-top: 23px;
+  }
+
+  /* Remove bar from about section */
+  .bar-sep {
+    display: none;
+  }
+
+  /* Jumbotron centering---------------------->*/
+  .jumbotron {
+    text-align: center;
+  }
+
+  .jumbotron p {
+    padding-bottom: 150px;
+  }
+
+  .jumbotron h1 {
+    margin-top: 10px;
+  }
+
+  /*Tablet Jumbotron background image */
+  .jumbotron {
+    background-position: -100px -100px;
+  }
+
+
+  }
+}
